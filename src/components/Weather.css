@@ -1,0 +1,149 @@
+.wrapper {
+  display: flex;
+  margin: 45px  36px 50px;
+}
+.weather {
+  /* height: 75vh; */
+  place-self: start;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px #cccccc6a, -3px -3px 10px #cccccc6a;
+  background-image: linear-gradient(45deg, #435a96, #37a8fe);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.search-box input {
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  padding-left: 25px;
+  color: #626262;
+  background: #ebfffc;
+  font-size: 18px;
+}
+.search-box img {
+  width: 50px;
+  padding: 15px;
+  border-radius: 50%;
+  background: #ebfffc;
+  cursor: pointer;
+}
+.weather-icon {
+  width: 150px;
+  margin: 32px 0;
+}
+.temprature {
+  color: #fff;
+  font-size: 80px;
+  line-height: 1;
+}
+.location {
+  color: #fff;
+  font-size: 40px;
+}
+.weather-data,
+.clothes {
+  width: 100%;
+  margin-top: 42px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+.col {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 22px;
+}
+.col span {
+  display: block;
+  font-size: 16px;
+}
+.col img {
+  width: 26px;
+  margin-top: 10px;
+}
+
+.daily-info {
+  display: block;
+  margin-left: 42px;
+  gap: 25px;
+}
+.today {
+  display: flex;
+}
+.weather-info{
+    margin-top: 22px;
+    place-content: center;
+}
+.inner-temp {
+    display: flex;
+    justify-content: space-evenly;
+}
+.inner-temp img {
+  width: 50px;
+}
+
+.temp {
+  margin-top: 20px;
+  font-size: 24px;
+}
+.sessions {
+  text-align: center;
+  margin-right: 25px;
+  width: 16vw;
+  /* height: 40vh; */
+  box-shadow: 1px 1px 5px #cccccc6a, -1px -1px 5px #cccccc6a;
+  background-image: linear-gradient(45deg, #435a96, #37a8fe);
+  padding: 18px 52px 45px;
+  border-radius: 10px;
+  color: #fff;
+  /* font-size: 18px; */
+  /* font-weight: 400; */
+}
+.sessions:first-child {
+  /* height: 314px; */
+  font-size: 21px;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 36px;
+  margin-top: 15px;
+}
+.prediction {
+  display: flex;
+}
+.wind-direction,
+.pressure {
+  text-align: center;
+  box-shadow: 3px 3px 10px #cccccc6a, -3px -3px 10px #cccccc6a;
+  background-image: linear-gradient(45deg, #435a96, #37a8fe);
+  width: 25vw;
+  /* height: 30vh; */
+  margin-right: 25px;
+  margin-top: 32px;
+  padding: 45px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 21px;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    display: block;
+  }
+  .daily-info {
+    display: none;
+  }
+}
